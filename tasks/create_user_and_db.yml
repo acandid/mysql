@@ -1,0 +1,20 @@
+---
+- name: Create Database
+  mysql_db:
+    name: "{{ mysql_db_name }}"
+    state: present
+    login_host: localhost
+    login_user: "{{ mysql_root_user }}"
+    login_password: "{{ mysql_root_pass }}"
+#
+- name: Create User
+  mysql_user:
+    name: "{{ mysql_db_user }}"
+    password: "{{ mysql_db_user_pass }}"
+    state: present
+    priv: '{{ mysql_db_name }}.*:ALL'
+    host: "{{ mysql_src_ip }}"
+    login_host: localhost
+    login_user: "{{ mysql_root_user }}"
+    login_password: "{{ mysql_root_pass }}"
+...

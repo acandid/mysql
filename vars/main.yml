@@ -1,0 +1,9 @@
+---
+# vars file for mysql####
+#
+mysql_packages:
+  - mysql-server
+  - python2-PyMySQL
+  - python3-PyMySQL
+#
+mysql_service: mysqld

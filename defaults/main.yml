@@ -1,0 +1,14 @@
+---
+# defaults file for mysql
+mysql_root_user: root
+#
+mysql_root_pass: 123qwe
+#
+mysql_db_name: linux
+#
+mysql_db_user: almir
+#
+mysql_db_user_pass: 123qwe
+#
+mysql_src_ip: 192.168.0.7
+#

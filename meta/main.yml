@@ -1,0 +1,21 @@
+---
+dependencies: []
+#
+galaxy_info:
+  author: acandid
+  description: Install MySQL 8 on RedHat/CentOS 8 and Create user and database.
+  company: "Almir Candido"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.9
+  platforms:
+    - name: EL
+      versions:
+        - 8
+#
+  galaxy_tags:
+    - mysql
+    - mariadb
+    - database
+    - db
+#
+allow_duplicates: true

@@ -1,0 +1,15 @@
+---
+# tasks file for mysql
+#
+- name: Import task install_mysql_rhel.yml
+  import_tasks: install_mysql_rhel.yml
+  tags: install
+#
+- name: Import task config_mysql.yml
+  import_tasks: config_mysql.yml
+  tags: root_pass
+#
+- name: Import task create_user_and_db.yml
+  import_tasks: create_user_and_db.yml
+  tags: db_and_user
+...

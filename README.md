@@ -44,7 +44,7 @@ Attention
 When you run a second time on the same server to just create a new database and a new user, it must be used in the following way below.
 
 ```yml
-ansible-playbook you_playbook.yml --skip-tags "root_pass"
+ansible-playbook your_playbook.yml --skip-tags "root_pass"
 ```
 
 Example Playbook
